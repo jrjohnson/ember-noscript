@@ -1,6 +1,6 @@
 {
   "name": "ember-noscript",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Place a no script tag on your ember-cli app.",
   "directories": {
     "doc": "doc",
