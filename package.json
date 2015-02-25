@@ -11,7 +11,10 @@
     "build": "ember build",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrjohnson/ember-noscript.git"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
