@@ -6,6 +6,10 @@ module.exports = function(environment) {
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
+    noScript: {
+      content: 'noscripty stuff',
+      tag: 'specialnoscripttesttag'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
