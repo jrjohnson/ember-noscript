@@ -4,7 +4,7 @@
 module.exports = {
   name: 'ember-noscript',
   isDevelopingAddon: function() {
-    return true;
+    return false;
   },
   config: function() {
     var ENV = {
