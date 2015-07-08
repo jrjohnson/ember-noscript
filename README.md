@@ -15,7 +15,7 @@ Only does one thing, hopefully well:
 
 ## Usage
 
-* `ember install:addon ember-noscript`
+* `ember install ember-noscript`
 
 ### Customization
 This addon is configured via your applications `config/environment.js` file.
