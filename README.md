@@ -1,4 +1,5 @@
 # ember-noscript
+[![Build Status](https://travis-ci.org/jrjohnson/ember-noscript.svg)](https://travis-ci.org/jrjohnson/ember-noscript)
 
 Only does one thing, hopefully well:
 
