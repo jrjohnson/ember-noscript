@@ -1,5 +1,6 @@
 # ember-noscript
 [![Build Status](https://travis-ci.org/jrjohnson/ember-noscript.svg)](https://travis-ci.org/jrjohnson/ember-noscript)
+[![Ember Observer Score](http://emberobserver.com/badges/ember-noscript.svg)](http://emberobserver.com/addons/ember-noscript)
 
 Only does one thing, hopefully well:
 
