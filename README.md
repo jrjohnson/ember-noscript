@@ -1,4 +1,5 @@
 # ember-noscript
+
 [![Build Status](https://travis-ci.org/jrjohnson/ember-noscript.svg)](https://travis-ci.org/jrjohnson/ember-noscript)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-noscript.svg)](http://emberobserver.com/addons/ember-noscript)
 
@@ -28,24 +29,26 @@ The default `noScript` value is:
     'content': "<p>" +
                 "For full functionality of this site it is necessary to enable JavaScript." +
                 "Here are the <a href='http://www.enable-javascript.com/' target='_blank'>" +
-                "instructions how to enable JavaScript in your web browser</a>." +
+                "instructions on how to enable JavaScript in your web browser</a>." +
               "</p>"
   }
 ```
 
 ## Development
 
-* `git clone` this repository
+* `git clone <repository-url>` this repository
+* `cd ember-noscript`
 * `npm install`
 * `bower install`
 
 ## Running
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
 ## Running Tests
 
+* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
@@ -53,4 +56,4 @@ The default `noScript` value is:
 
 * `ember build`
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
