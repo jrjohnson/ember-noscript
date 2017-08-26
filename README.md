@@ -1,5 +1,7 @@
 # ember-noscript
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-noscript.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/jrjohnson/ember-noscript.svg)](https://travis-ci.org/jrjohnson/ember-noscript)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-noscript.svg)](http://emberobserver.com/addons/ember-noscript)
 
