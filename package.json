@@ -1,6 +1,6 @@
 {
   "name": "ember-noscript",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "description": "Place a no script tag on your ember-cli app.",
   "keywords": [
     "ember-addon",
