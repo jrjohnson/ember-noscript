@@ -12,7 +12,7 @@ module.exports = {
         tag:     'noscript',
         content: "<p>" +
                     "For full functionality of this site it is necessary to enable JavaScript." +
-                    "Here are the <a href='http://www.enable-javascript.com/' target='_blank'>" +
+                    "Here are the <a href='https://www.enable-javascript.com/' target='_blank'>" +
                     "instructions on how to enable JavaScript in your web browser</a>." +
                   "</p>"
       }
