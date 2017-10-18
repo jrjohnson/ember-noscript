@@ -12,7 +12,7 @@ Only does one thing, hopefully well:
   <p>
     For full functionality of this site it is necessary to enable JavaScript.  
     Here are the
-    <a href='http://www.enable-javascript.com/' target='_blank'> instructions how to enable JavaScript in your web browser</a>.
+    <a href='https://www.enable-javascript.com/' target='_blank'> instructions how to enable JavaScript in your web browser</a>.
   </p>
 </noscript>
 ```
@@ -30,7 +30,7 @@ The default `noScript` value is:
   noScript: {
     'content': "<p>" +
                 "For full functionality of this site it is necessary to enable JavaScript." +
-                "Here are the <a href='http://www.enable-javascript.com/' target='_blank'>" +
+                "Here are the <a href='https://www.enable-javascript.com/' target='_blank'>" +
                 "instructions on how to enable JavaScript in your web browser</a>." +
               "</p>"
   }
