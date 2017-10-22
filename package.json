@@ -11,9 +11,14 @@
   "directories": {
     "test": "tests"
   },
+  "scripts": {
+    "test": "eslint ."
+  },
   "repository": "https://github.com/jrjohnson/ember-noscript.git",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.9.0"
+  },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   }
