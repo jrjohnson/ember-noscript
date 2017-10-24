@@ -7,6 +7,9 @@ dist: trusty
 
 cache:
   yarn: true
+  directories:
+    - $HOME/.npm
+    - $HOME/.cache
 
 env:
   global:
