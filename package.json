@@ -31,5 +31,12 @@
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
-  }
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "index.js",
+    "ember-cli-build.js",
+    "config/"
+  ]
 }
