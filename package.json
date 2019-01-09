@@ -18,7 +18,7 @@
   "repository": "https://github.com/jrjohnson/ember-noscript.git",
   "dependencies": {},
   "devDependencies": {
-    "ember-cli": "~3.4.3",
+    "ember-cli": "~3.7.0",
     "ember-cli-addon-tests": "^0.11.0",
     "ember-cli-eslint": "^4.2.3",
     "ember-disable-prototype-extensions": "^1.1.3",
