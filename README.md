@@ -1,9 +1,17 @@
 # ember-noscript
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jrjohnson/ember-noscript.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/jrjohnson/ember-noscript.svg)](https://travis-ci.org/jrjohnson/ember-noscript)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-noscript.svg)](http://emberobserver.com/addons/ember-noscript)
+
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v2.18 or above
+* Ember CLI v2.13 or above
+
+
+Installation
+------------------------------------------------------------------------------
 
 Only does one thing, hopefully well:
 
@@ -36,26 +44,10 @@ The default `noScript` value is:
   }
 ```
 
-## Development
+See the [Contributing](CONTRIBUTING.md) guide for details.
 
-* `git clone <repository-url>` this repository
-* `cd ember-noscript`
-* `npm install`
-* `bower install`
 
-## Running
+License
+------------------------------------------------------------------------------
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-## Running Tests
-
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+This project is licensed under the [MIT License](LICENSE.md).
