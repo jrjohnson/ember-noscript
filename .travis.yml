@@ -14,3 +14,10 @@ env:
   global:
     # See https://git.io/vdao3 for details.
     - JOBS=1
+
+deploy:
+  provider: npm
+  email: jon.johnson@ucsf.edu
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
