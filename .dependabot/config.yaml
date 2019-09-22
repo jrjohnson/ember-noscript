@@ -1,0 +1,30 @@
+version: 1
+
+update_configs:
+  - package_manager: javascript
+    directory: "/"
+    update_schedule: daily
+    ignored_updates:
+    # ignore everything ember-cli provides in the blueprint
+    - match:
+        dependency_name: "ember-cli"
+    - match:
+        dependency_name: "ember-cli-eslint"
+    - match:
+        dependency_name: "ember-disable-prototype-extensions"
+    - match:
+        dependency_name: "ember-source-channel-url"
+    automerged_updates:
+    - match:
+        dependency_name: "eslint"
+    - match:
+        dependency_name: "eslint-plugin-ember"
+    - match:
+        dependency_name: "eslint-plugin-mocha"
+    - match:
+        dependency_name: "eslint-plugin-node"
+    - match:
+        dependency_name: "mocha"
+    - match:
+        dependency_name: "ember-cli-addon-tests"
+
