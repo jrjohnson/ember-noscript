@@ -23,3 +23,9 @@ deploy:
   api_key: $NPM_TOKEN
   on:
     tags: true
+
+branches:
+  only:
+    - master
+    # npm version tags
+    - /^v\d+\.\d+\.\d+/
