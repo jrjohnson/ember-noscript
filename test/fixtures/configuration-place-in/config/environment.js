@@ -3,13 +3,12 @@
 
 module.exports = function(environment) {
   let ENV = {
-    modulePrefix: 'configuration-env',
+    modulePrefix: 'configuration-place-in',
     environment,
     rootURL: '/',
     locationType: 'auto',
     noScript: {
-      content: 'noscripty stuff',
-      tag: 'specialnoscripttesttag'
+      placeIn: 'body',
     },
     EmberENV: {
       FEATURES: {
