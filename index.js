@@ -1,29 +1,60 @@
 'use strict';
 
-module.exports = {
-  name: 'ember-noscript',
-  isDevelopingAddon: function() {
-    return false;
-  },
-  config: function() {
-    var ENV = {
-      noScript: {
-        tag:     'noscript',
-        content: "<p>" +
-                    "For full functionality of this site it is necessary to enable JavaScript. " +
-                    "Here are the <a href='https://www.enable-javascript.com/' target='_blank'>" +
-                    "instructions on how to enable JavaScript in your web browser</a>." +
-                  "</p>"
-      }
-    };
+const { defaultNoscriptContent } = require('./lib/strings');
 
-    return ENV;
+module.exports = {
+  name: require('./package').name,
+  isConfigChecked: false,
+  config(env, appConfig) {
+    this.checkConfig(appConfig)
   },
-  contentFor: function(type, config) {
-    if( type === 'body') {
-      return '<' + config.noScript.tag + '>' +
-        config.noScript.content +
-        '</' + config.noScript.tag + '>';
+  contentFor(type, config) {
+    const placeIn = this.getValueForPlaceIn(config);
+    const content = this.getValueForContent(config);
+    if( type === placeIn) {
+      return `<noscript>${content}</noscript>`;
+    }
+  },
+  getValueForContent(config) {
+    if ('noScript' in config) {
+      if ('content' in config.noScript) {
+        return config.noScript.content;
+      }
+    }
+
+    return defaultNoscriptContent;
+  },
+  getValueForPlaceIn(config) {
+    if ('noScript' in config) {
+      if ('placeIn' in config.noScript) {
+        return config.noScript.placeIn;
+      }
+    }
+
+    return "head";
+  },
+  checkConfig(appConfig) {
+    //ensure we only check config once to avoid duplicate messages.
+    if (this.isConfigChecked) {
+      return;
+    }
+    this.isConfigChecked = true;
+    if ('noScript' in appConfig) {
+      if ('tag' in appConfig.noScript) {
+        this.ui.writeWarnLine(`ember-noscript
+          Specifying the 'tag' option in environment.js for "noScript" was removed in v4.0.0.
+          <noscript> is now the only tag option.
+        `);
+      }
+
+      if ('placeIn' in appConfig.noScript) {
+        if (!['head', 'body'].includes(appConfig.noScript.placeIn)) {
+          this.ui.writeWarnLine(`ember-noscript
+          "${appConfig.noScript.placeIn}" is not a valid option for noScript placeIn option.
+          Specify "head" or "body".
+        `);
+        }
+      }
     }
   }
 };

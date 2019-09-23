@@ -27,4 +27,8 @@ update_configs:
         dependency_name: "mocha"
     - match:
         dependency_name: "ember-cli-addon-tests"
+    - match:
+        dependency_name: "jsdom"
+    - match:
+        dependency_name: "request"
 
