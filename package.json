@@ -13,7 +13,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "lint:js": "eslint ./*.js addon addon-test-support app config lib server test-support tests"
+    "lint:js": "eslint ."
   },
   "repository": "https://github.com/jrjohnson/ember-noscript.git",
   "devDependencies": {
