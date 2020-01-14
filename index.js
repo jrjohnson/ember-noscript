@@ -46,15 +46,6 @@ module.exports = {
           <noscript> is now the only tag option.
         `);
       }
-
-      if ('placeIn' in appConfig.noScript) {
-        if (!['head', 'body'].includes(appConfig.noScript.placeIn)) {
-          this.ui.writeWarnLine(`ember-noscript
-          "${appConfig.noScript.placeIn}" is not a valid option for noScript placeIn option.
-          Specify "head" or "body".
-        `);
-        }
-      }
     }
   }
 };
