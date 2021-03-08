@@ -1,27 +1,42 @@
-name: Run Tests
+name: Continuous Integration
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
-  build:
-
+  test:
+    name: Tests
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [10.x,12.x,14.x]
+        node-version: [10.x, 12.x, 14.x]
 
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
-        registry-url: https://registry.npmjs.org/
-    - name: npm install, lint, and test
-      run: |
-        npm install
-        npm run lint:js
-        npm test
-      env:
-        CI: true
+    - name: install dependencies
+      run: npm ci
+    - name: lint js
+      run: npm run lint:js
+    - name: test
+      run: npm test
+
+  test-floating:
+    name: Floating Dependencies
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 14
+    - name: install dependencies
+      run: npm install --no-package-lock
+    - name: test
+      run: npm test
