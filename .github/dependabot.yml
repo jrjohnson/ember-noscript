@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "13:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: ember-cli
+    versions:
+    - ">= 0"
+  - dependency-name: ember-cli-eslint
+    versions:
+    - ">= 0"
+  - dependency-name: ember-disable-prototype-extensions
+    versions:
+    - ">= 0"
+  - dependency-name: ember-source-channel-url
+    versions:
+    - ">= 0"
+  - dependency-name: jsdom
+    versions:
+    - 16.4.0
+    - 16.5.0
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+    - 8.3.0
+  - dependency-name: eslint-plugin-ember
+    versions:
+    - 8.14.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
