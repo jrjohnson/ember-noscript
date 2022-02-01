@@ -2,5 +2,19 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "license": "MIT",
+  "author": "Jonathan Johnson",
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:addon": "npm run -w ember-noscript start",
+    "start:test-app-place-in": "npm run -w test-app-place-in start"
+  },
+  "devDependencies": {
+    "npm-run-all": "4.1.5"
+  },
+  "repository": "https://github.com/jrjohnson/ember-noscript.git",
+  "engines": {
+    "node": "12.* || 14.* || >= 16"
+  }
 }

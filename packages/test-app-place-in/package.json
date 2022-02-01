@@ -66,5 +66,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-noscript": "^4.1.0"
   }
 }
