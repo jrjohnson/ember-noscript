@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Jonathan Johnson",
   "scripts": {
-    "test": "npm-run-all --parallel test:*",
+    "test": "npm-run-all test:*",
     "start:addon": "npm run -w ember-noscript start",
     "start:test-app-custom-config": "npm run -w test-app-custom-config start",
     "test:test-app-custom-config": "npm run -w test-app-custom-config test",
