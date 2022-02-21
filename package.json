@@ -7,8 +7,10 @@
   "author": "Jonathan Johnson",
   "scripts": {
     "start": "npm-run-all --parallel start:*",
+    "test": "npm-run-all --parallel test:*",
     "start:addon": "npm run -w ember-noscript start",
-    "start:test-app-place-in": "npm run -w test-app-place-in start"
+    "start:test-app-custom-config": "npm run -w test-app-custom-config start",
+    "test:test-app-custom-config": "npm run -w test-app-custom-config test"
   },
   "devDependencies": {
     "npm-run-all": "4.1.5"

@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   let ENV = {
-    modulePrefix: 'test-app-place-in',
+    modulePrefix: 'test-app-custom-config',
     environment,
     rootURL: '/',
     locationType: 'history',
@@ -15,6 +15,10 @@ module.exports = function (environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false,
       },
+    },
+    noScript: {
+      'content': "No script stuff",
+      'placeIn': 'body'
     },
 
     APP: {
