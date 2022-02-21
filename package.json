@@ -6,11 +6,12 @@
   "license": "MIT",
   "author": "Jonathan Johnson",
   "scripts": {
-    "start": "npm-run-all --parallel start:*",
     "test": "npm-run-all --parallel test:*",
     "start:addon": "npm run -w ember-noscript start",
     "start:test-app-custom-config": "npm run -w test-app-custom-config start",
-    "test:test-app-custom-config": "npm run -w test-app-custom-config test"
+    "test:test-app-custom-config": "npm run -w test-app-custom-config test",
+    "start:test-app-defaults": "npm run -w test-app-defaults start",
+    "test:test-app-defaults": "npm run -w test-app-defaults test"
   },
   "devDependencies": {
     "npm-run-all": "4.1.5"
