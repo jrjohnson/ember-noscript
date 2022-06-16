@@ -18,6 +18,7 @@
   },
   "repository": "https://github.com/jrjohnson/ember-noscript.git",
   "engines": {
-    "node": "12.* || 14.* || >= 16"
+    "node": ">= 16",
+    "npm": ">= 7"
   }
 }
