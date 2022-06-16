@@ -17,8 +17,8 @@ module.exports = function (environment) {
       },
     },
     noScript: {
-      'content': "No script stuff",
-      'placeIn': 'body'
+      content: 'No script stuff',
+      placeIn: 'body',
     },
 
     APP: {
