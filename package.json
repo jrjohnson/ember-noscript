@@ -7,7 +7,7 @@
   "author": "Jonathan Johnson",
   "scripts": {
     "test": "npm-run-all test:*",
-    "start:addon": "npm run -w ember-noscript start",
+    "test:addon": "npm run -w ember-noscript test",
     "start:test-app-custom-config": "npm run -w test-app-custom-config start",
     "test:test-app-custom-config": "npm run -w test-app-custom-config test",
     "start:test-app-defaults": "npm run -w test-app-defaults start",

@@ -6,12 +6,12 @@ module.exports = {
   name: require('./package').name,
   isConfigChecked: false,
   config(env, appConfig) {
-    this.checkConfig(appConfig)
+    this.checkConfig(appConfig);
   },
   contentFor(type, config) {
     const placeIn = this.getValueForPlaceIn(config);
     const content = this.getValueForContent(config);
-    if( type === placeIn) {
+    if (type === placeIn) {
       return `<noscript>${content}</noscript>`;
     }
   },
@@ -31,7 +31,7 @@ module.exports = {
       }
     }
 
-    return "head";
+    return 'head';
   },
   checkConfig(appConfig) {
     //ensure we only check config once to avoid duplicate messages.
@@ -47,5 +47,5 @@ module.exports = {
         `);
       }
     }
-  }
+  },
 };
