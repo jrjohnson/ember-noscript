@@ -7,18 +7,26 @@
   "author": "Jonathan Johnson",
   "scripts": {
     "test": "npm-run-all test:*",
+    "lint": "npm-run-all lint:*",
     "test:addon": "npm run -w ember-noscript test",
+    "lint:addon": "npm run -w ember-noscript test",
     "start:test-app-custom-config": "npm run -w test-app-custom-config start",
     "test:test-app-custom-config": "npm run -w test-app-custom-config test",
+    "lint:test-app-custom-config": "npm run -w test-app-custom-config lint",
     "start:test-app-defaults": "npm run -w test-app-defaults start",
-    "test:test-app-defaults": "npm run -w test-app-defaults test"
+    "test:test-app-defaults": "npm run -w test-app-defaults test",
+    "lint:test-app-defaults": "npm run -w test-app-defaults lint"
   },
   "devDependencies": {
-    "npm-run-all": "4.1.5"
+    "npm-run-all": "4.1.5",
+    "pre-commit": "^1.2.2"
   },
   "repository": "https://github.com/jrjohnson/ember-noscript.git",
   "engines": {
     "node": ">= 16",
     "npm": ">= 7"
-  }
+  },
+  "pre-commit": [
+    "lint"
+  ]
 }
