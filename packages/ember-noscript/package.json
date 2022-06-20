@@ -1,0 +1,41 @@
+{
+  "name": "ember-noscript",
+  "version": "4.1.0",
+  "description": "Place a noscript tag in your ember-cli app.",
+  "keywords": [
+    "ember-addon",
+    "noscript"
+  ],
+  "license": "MIT",
+  "author": "Jonathan Johnson",
+  "repository": "https://github.com/jrjohnson/ember-noscript.git",
+  "scripts": {
+    "test": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel \"lint:!(fix)\"",
+    "lint:fix": "npm-run-all --aggregate-output --continue-on-error --parallel lint:*:fix",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-ember": "^10.5.8",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-qunit": "^7.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.5.1"
+  },
+  "engines": {
+    "node": "12.* || 14.* || >= 16"
+  },
+  "files": [
+    "README.md",
+    "LICENSE.md",
+    "index.js",
+    "ember-cli-build.js",
+    "config/",
+    "lib/"
+  ]
+}
