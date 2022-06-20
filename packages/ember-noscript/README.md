@@ -1,20 +1,8 @@
 # ember-noscript
 
-[![Build Status](https://travis-ci.org/jrjohnson/ember-noscript.svg)](https://travis-ci.org/jrjohnson/ember-noscript)
 [![Ember Observer Score](http://emberobserver.com/badges/ember-noscript.svg)](http://emberobserver.com/addons/ember-noscript)
 
-Compatibility
-------------------------------------------------------------------------------
-
-* Ember.js v3.4 or above
-* Ember CLI v2.13 or above
-* Node.js v8 or above
-
-
-Installation
-------------------------------------------------------------------------------
-
-Only does one thing, hopefully well:
+Only does one thing, hopefully well. Adding a noscript tag to your ember app's index.html:
 
 ```html
 <noscript>
@@ -26,9 +14,18 @@ Only does one thing, hopefully well:
 </noscript>
 ```
 
-## Usage
+## Compatibility
 
-* `ember install ember-noscript`
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
+* Node.js v12 or above
+
+
+## Installation
+
+```
+ember install ember-noscript
+```
 
 ### Customization
 This addon is configured via your applications `config/environment.js` file.
