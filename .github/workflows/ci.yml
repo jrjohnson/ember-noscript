@@ -54,8 +54,8 @@ jobs:
       fail-fast: false
       matrix:
         app:
-          - packages/test-app-defaults
-          - packages/test-app-custom-config
+          - test-app-defaults
+          - test-app-custom-config
         try-scenario:
           - ember-lts-3.24
           - ember-lts-3.28
@@ -77,4 +77,4 @@ jobs:
         run: npm ci
       - name: Run Tests
         run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
-        working-directory: ${{ matrix.app }}
+        working-directory: packages/${{ matrix.app }}
