@@ -1,0 +1,105 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/packages/test-app-defaults"
+  schedule:
+    interval: weekly
+  ignore:
+  - dependency-name: broccoli-asset-rev
+  - dependency-name: "@ember/optional-features"
+  - dependency-name: "@ember/test-helpers"
+  - dependency-name: "@embroider/test-setup"
+  - dependency-name: "@glimmer/component"
+  - dependency-name: "@glimmer/tracking"
+  - dependency-name: babel-eslint
+  - dependency-name: broccoli-asset-rev
+  - dependency-name: ember-auto-import
+  - dependency-name: ember-cli
+  - dependency-name: ember-cli-app-version
+  - dependency-name: ember-cli-babel
+  - dependency-name: ember-cli-dependency-checker
+  - dependency-name: ember-cli-htmlbars
+  - dependency-name: ember-cli-inject-live-reload
+  - dependency-name: ember-cli-sri
+  - dependency-name: ember-cli-terser
+  - dependency-name: ember-data
+  - dependency-name: ember-export-application-global
+  - dependency-name: ember-fetch
+  - dependency-name: ember-load-initializers
+  - dependency-name: ember-page-title
+  - dependency-name: ember-qunit
+  - dependency-name: ember-resolver
+  - dependency-name: ember-source
+  - dependency-name: ember-source-channel-url
+  - dependency-name: ember-template-lint
+  - dependency-name: ember-try
+  - dependency-name: ember-welcome-page
+  - dependency-name: eslint
+  - dependency-name: eslint-config-prettier
+  - dependency-name: eslint-plugin-ember
+  - dependency-name: eslint-plugin-node
+  - dependency-name: eslint-plugin-prettier
+  - dependency-name: eslint-plugin-qunit
+  - dependency-name: loader.js
+  - dependency-name: npm-run-all
+  - dependency-name: prettier
+  - dependency-name: qunit
+  - dependency-name: qunit-dom
+  - dependency-name: webpack
+
+- package-ecosystem: npm
+  directory: "/packages/test-app-custom-config"
+  schedule:
+    interval: weekly
+  ignore:
+  - dependency-name: broccoli-asset-rev
+  - dependency-name: "@ember/optional-features"
+  - dependency-name: "@ember/test-helpers"
+  - dependency-name: "@embroider/test-setup"
+  - dependency-name: "@glimmer/component"
+  - dependency-name: "@glimmer/tracking"
+  - dependency-name: babel-eslint
+  - dependency-name: broccoli-asset-rev
+  - dependency-name: ember-auto-import
+  - dependency-name: ember-cli
+  - dependency-name: ember-cli-app-version
+  - dependency-name: ember-cli-babel
+  - dependency-name: ember-cli-dependency-checker
+  - dependency-name: ember-cli-htmlbars
+  - dependency-name: ember-cli-inject-live-reload
+  - dependency-name: ember-cli-sri
+  - dependency-name: ember-cli-terser
+  - dependency-name: ember-data
+  - dependency-name: ember-export-application-global
+  - dependency-name: ember-fetch
+  - dependency-name: ember-load-initializers
+  - dependency-name: ember-page-title
+  - dependency-name: ember-qunit
+  - dependency-name: ember-resolver
+  - dependency-name: ember-source
+  - dependency-name: ember-source-channel-url
+  - dependency-name: ember-template-lint
+  - dependency-name: ember-try
+  - dependency-name: ember-welcome-page
+  - dependency-name: eslint
+  - dependency-name: eslint-config-prettier
+  - dependency-name: eslint-plugin-ember
+  - dependency-name: eslint-plugin-node
+  - dependency-name: eslint-plugin-prettier
+  - dependency-name: eslint-plugin-qunit
+  - dependency-name: loader.js
+  - dependency-name: npm-run-all
+  - dependency-name: prettier
+  - dependency-name: qunit
+  - dependency-name: qunit-dom
+  - dependency-name: webpack
+
+- package-ecosystem: npm
+  directory: "/packages/ember-noscript"
+  schedule:
+    interval: daily
+
+- package-ecosystem: github-actions
+  directory: "/"
+  schedule:
+    interval: weekly
